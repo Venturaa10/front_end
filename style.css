@@ -1,0 +1,16 @@
+body {
+    background-color: #CCCCCC;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Nessa escrita, o css vai buscar apenas os conteudos que estão nessa ordem, dentro de "em", e em seguida "strong", por exemplo. */
+em strong {
+    color: red;
+}
