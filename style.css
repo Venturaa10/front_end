@@ -2,11 +2,28 @@ body {
     background-color: #CCCCCC;
 }
 
+#banner {
+    width: 100%; /* Ocupando 100% da largura da pagina */
+}
+
 h1 {
     text-align: center;
+    height: 140px;
+    border: 10px solid black;
+
+    /* padding - Espaçamento interno*/
+    padding: 20px ; 
+
+    /* margin - Espaçamento externo */
+    margin: 40px;
 }
 
 p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px; 
     text-align: center;
 }
 
