@@ -1,9 +1,10 @@
-body {
-    background-color: #CCCCCC;
-}
-
 #banner {
     width: 100%; /* Ocupando 100% da largura da pagina */
+}
+
+.principal {
+    background-color: #CCCCCC;
+
 }
 
 h1 {
@@ -31,3 +32,17 @@ p {
 em strong {
     color: red;
 }
+
+.beneficios {
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.itens {
+    font-style: italic;
+
+}
+
