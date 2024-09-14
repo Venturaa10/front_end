@@ -14,9 +14,13 @@
 <!-- tag "body" - São todas informações que são exibidas para o navegador -->
 
 <body>
+    <!-- "header" -> Utilizado normalmente para definir a seção de cabeçalho da pagina, ou cabeçalho de seções, como "article", "section", "aside" por exemplo -->
+    <header>
+        <h1 class="titulo-principal">Barbearia Alura</h1>
+    </header>
     <img id="banner" src="banner.jpg">
     <div class="principal">
-        <h1>Sobre a Barbearia Alura</h1>
+        <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
 
         <!-- tag "strong" - Dar importancia a determinado conteúdo, por exemplo, adiciona negrito ao conteudo -->
         <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
@@ -29,18 +33,25 @@
     </div>
 
     <div class="beneficios">
-        <h2>Beneficios</h2>
+        <h3 class="titulo-centralizado">Beneficios</h3>
         <!-- Trabalhando com listas -->
         <!-- "ul" - Lista não ordenada -->
         <!-- "ol" - Lista ordenada -->
         <!-- "li" - Lista os itens-->
         <ul>
+            <!-- "block" -> Comportamento de uma tag que ocupa toda a largura disponível da linha pai. 
+            Exemplo: a tag <li> em uma lista. 
+            Mesmo que o conteúdo dentro de um elemento block seja menor do que a largura disponível, o elemento block sempre ocupará a largura total da linha. -->
             <li class="itens">Atendimento aos Clientes</li>
             <li class="itens">Espaço diferenciado</li>
             <li class="itens">Localização</li>
             <li class="itens">Profissionais Qualificados</li>
         </ul>
-        <img id="banner" src="beneficios.jpg">
+        <!-- "inline" -> Comportamento de uma tag que ocupa apenas o espaço necessario para seu conteúdo e não força a quebra de linha. 
+        Exemplo: a tag span, img. 
+        Elementos inline são exibidos na mesma linha que outros elementos inline, ocupando apenas o espaço correspondente ao seu conteúdo. -->
+
+        <img class="imagemBeneficios" src="beneficios.jpg">
     </div>
 </body>
 

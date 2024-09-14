@@ -1,22 +1,15 @@
+.titulo-principal {
+    padding-left: 20px;
+}
+
 #banner {
     width: 100%; /* Ocupando 100% da largura da pagina */
 }
 
 .principal {
     background-color: #CCCCCC;
+    padding: 30px;
 
-}
-
-h1 {
-    text-align: center;
-    height: 140px;
-    border: 10px solid black;
-
-    /* padding - Espaçamento interno*/
-    padding: 20px ; 
-
-    /* margin - Espaçamento externo */
-    margin: 40px;
 }
 
 p {
@@ -35,14 +28,24 @@ em strong {
 
 .beneficios {
     background-color: white;
+    padding: 20px;
 }
 
-h2 {
+.titulo-centralizado {
     text-align: center;
 }
 
 .itens {
     font-style: italic;
-
 }
 
+ul {
+    display: inline-block; /* Alinha as tags "li" e a "img" */
+    vertical-align: top; /*Alinhando todos os elementos a linha acima (no topo), por padrão, todos os elementos são alinhados a linha debaixo*/
+    width: 20%; 
+    margin-right: 15%;
+}
+
+.imagemBeneficios {
+    width: 50%;
+}
