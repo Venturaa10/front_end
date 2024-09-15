@@ -1,0 +1,17 @@
+header {
+    background-color: #BBBBBB;
+}
+
+nav li {
+    display: inline;
+    /* top right bottom left */
+    margin-left: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase; /*Transformando o texto em maiusculo, essa é a forma correta de estilizar o tamanho da letra no HTML*/
+    color: black; 
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*Nenhuma decoração no texto, retira o sublinhado do link*/
+}
