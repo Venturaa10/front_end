@@ -31,3 +31,32 @@ nav a {
     font-size: 22px;
     text-decoration: none; /*Nenhuma decoração no texto, retira o sublinhado do link*/
 }
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    /* Com a ocupação total sendo 100%, cada "li" vai ocupar 30% desse total */
+    width: 30%;
+    vertical-align: top;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+}
