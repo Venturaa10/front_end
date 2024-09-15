@@ -1,5 +1,21 @@
 header {
     background-color: #BBBBBB;
+    padding: 20px 0; 
+
+}
+
+.caixa {
+    /* Centralizando a imagem e o nav um ao lado do outro, dentro do cabeçalho */
+    position: relative;
+    width: 940px;
+    margin: 0 auto; /*Usando a margin para calcular automaticamente a largura que resta entre os itens (img e nav)*/
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+
 }
 
 nav li {
