@@ -32,6 +32,13 @@ nav a {
     text-decoration: none; /*Nenhuma decoração no texto, retira o sublinhado do link*/
 }
 
+/* "hover" -> Comportamento do elemento quando o mouse estiver no mesmo */
+nav a:hover {
+    color: darkcyan;
+    /* O elemento fica sublinhado  */
+    text-decoration: underline; 
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto;
@@ -44,6 +51,32 @@ nav a {
     /* Com a ocupação total sendo 100%, cada "li" vai ocupar 30% desse total */
     width: 30%;
     vertical-align: top;
+    /* background-color: #CCCCCC; */
+    /* cima e baixo | esquerda e direita */
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /* O espaçamento lateral de 20px, esteja dentro do percentual (30% nesse caso)*/
+    box-sizing: border-box;
+    /* Configuração inicial para montar a borda. A borda fica entre o padding e a margin*/
+    border: 2px solid black;
+    /* border-color: black;
+    border-width: 2px;
+    border-style: solid; */
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: rgb(226, 186, 43);
+}
+
+.produtos li:hover h2 {
+    font-size: 35px;    
+
+}
+
+/* Configuração quando o mouse interagir (clique) com o elemento */
+.produtos li:active {
+    border-color: #088c19;
 }
 
 .produtos h2 {
@@ -59,4 +92,5 @@ nav a {
 .produto-preco {
     font-size: 22px;
     font-weight: bold;
+    margin: 10px 0 0;
 }
