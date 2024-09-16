@@ -94,3 +94,17 @@ nav a:hover {
     font-weight: bold;
     margin: 10px 0 0;
 }
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    /* Coloca uma imagem de fundo */
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
