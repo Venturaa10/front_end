@@ -95,11 +95,33 @@ nav a:hover {
     margin: 10px 0 0;
 }
 
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block; /*Conteudo ao lado, quebra para baixo*/
+    font-size: 20px;
+    margin: 0 0 10px; /*Adiciona um espaçamento externo abaixo do conteudo */
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
 footer {
     margin-top: 30px;
     text-align: center;
     /* Coloca uma imagem de fundo */
-    background: url("bg.jpg");
+    background: url("/img/bg.jpg");
     padding: 40px 0;
 }
 
@@ -108,3 +130,4 @@ footer {
     font-size: 13px;
     margin-top: 20px;
 }
+

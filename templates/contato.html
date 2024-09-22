@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura - Contato</title>
+    <!-- É importante seguir essa ordem, primeiro o reset, depois meus estilos, para que não haja nenhuma alteração do estilo reset sobre os meus -->
+    <link rel="stylesheet" href="/styles/reset.css">
+    <!-- Arquivo responsavel por remover todos estilos criados automaticamente pelo navegador, quando trabalhamos com o mesmo-->
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1>
+                <img src="/img/logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="/templates/index.html">Home</a></li>
+                        <li><a href="/templates/produtos.html">Produtos</a></li>
+                        <li><a href="/templates/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <!-- Label é uma etique para o input -->
+            <label for="nomeSobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomeSobrenome">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone">
+
+            <!-- Com o value, independente do idioma do usuario, vai exibir o conteudo que está em "value" -->
+            <input type="submit" value="Enviar Formulario">
+        </form>
+    </main>
+
+    <!-- "footer" -> Representa o conteudo do rodepé  -->
+    <footer>
+        <img src="/img/logo-branco.png" alt="">
+        <!-- Codigo "unicode" no inicio do paragrafo, esse representa o simbolo de "copyright" -->
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
+
+</html>
