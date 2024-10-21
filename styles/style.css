@@ -137,12 +137,33 @@ form label, form legend {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 1s background; /* Adiciona um transição, delay Xsegundos, não acontecendo mais de forma instantanea. Transição de background*/
+    transition: 1s all; /* Adiciona um transição, delay Xsegundos, não acontecendo mais de forma instantanea.*/
+    /* Propriedade "all" -> Aplica o delay para todos os elementos CSS, exemplo vai demorar Xs para ocorrer o aumento de X% que foi aplicado em "nome:hover" acontecer. */
+
     cursor: pointer; /* O cursor do mouse é alterado, mostrando para o usuario que o elemento é clicavel */
 }
 
 .enviar:hover { /* Estilo quando o mouse está por cima do botão */
-    background-color: darkorange;
+    background-color: darkorange; 
+    /* Propriedade "scale()" -> Realiza o aumento de X% do CSS de todos os elementos de estilos correspondente a essa classe*/
+    transform: scale(1.2);
+    /* transform: rotate(70deg) scale(1.2); Propriedade "rotate(graus)" roda em Xgraus o elemento.*/
+    /* As propriedades na mesma linha, faz com que o efeito ocorra ao mesmo tempo.*/
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
 
 footer {
