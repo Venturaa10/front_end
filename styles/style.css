@@ -12,6 +12,30 @@ header {
 
 }
 
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /* em -> Utilizado para trabalhar com tamanho proporcional, nesse caso o tamanho da fonte desse elemento vai ser 2x maior que o tamanho base */
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.banner {
+    width: 100%;
+}
+
+
 .caixa {
     /* Centralizando a imagem e o nav um ao lado do outro, dentro do cabeçalho */
     position: relative;
@@ -180,4 +204,12 @@ footer {
     margin-top: 20px;
 }
 
+.utensilios {
+    width: 120px;
+    float: left; /* Desloca o elemento, deixando os outros elementos ao redor */
+    margin:  0 20px 0 20px;
+}
 
+.imagemBeneficios {
+    width: 60%;
+}
