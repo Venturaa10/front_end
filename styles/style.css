@@ -5,6 +5,9 @@ class -> A classe da tag -> Força: 10
 tag -> A propria tag, exemplo "p" -> Força: 1
 
 */
+body {
+    font-family: "Montserrat", sans-serif; /* Fonte do google fonts*/
+}
 
 header {
     background-color: #BBBBBB;
@@ -212,4 +215,13 @@ footer {
 
 .imagemBeneficios {
     width: 60%;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
 }
