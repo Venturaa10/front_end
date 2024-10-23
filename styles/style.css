@@ -67,12 +67,6 @@ nav a {
     text-decoration: none; /*Nenhuma decoração no texto, retira o sublinhado do link*/
 }
 
-/* "hover" -> Comportamento do elemento quando o mouse estiver no mesmo */
-nav a:hover {
-    color: darkcyan;
-    /* O elemento fica sublinhado  */
-    text-decoration: underline; 
-}
 
 .produtos {
     width: 940px;
@@ -100,19 +94,6 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.produtos li:hover {
-    border-color: rgb(226, 186, 43);
-}
-
-.produtos li:hover h2 {
-    font-size: 35px;    
-
-}
-
-/* Configuração quando o mouse interagir (clique) com o elemento */
-.produtos li:active {
-    border-color: #088c19;
-}
 
 .produtos h2 {
     font-size: 30px;
@@ -137,6 +118,11 @@ main {
 
 form {
     margin: 40px 0;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
 }
 
 form label, form legend {
@@ -170,13 +156,6 @@ form label, form legend {
     cursor: pointer; /* O cursor do mouse é alterado, mostrando para o usuario que o elemento é clicavel */
 }
 
-.enviar:hover { /* Estilo quando o mouse está por cima do botão */
-    background-color: darkorange; 
-    /* Propriedade "scale()" -> Realiza o aumento de X% do CSS de todos os elementos de estilos correspondente a essa classe*/
-    transform: scale(1.2);
-    /* transform: rotate(70deg) scale(1.2); Propriedade "rotate(graus)" roda em Xgraus o elemento.*/
-    /* As propriedades na mesma linha, faz com que o efeito ocorra ao mesmo tempo.*/
-}
 
 table {
     margin: 20px 0 40px;
@@ -193,6 +172,46 @@ td, th {
     padding: 8px 15px;
 }
 
+
+.utensilios {
+    width: 120px;
+    float: left; /* Desloca o elemento, deixando os outros elementos ao redor */
+    margin:  0 20px 0 20px;
+}
+
+.mapa {
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficos {
+    padding: 3em 0;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.itens {
+    /* line-height -> Altura da linha do texto */
+    line-height: 1.5em;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
 footer {
     margin-top: 30px;
     text-align: center;
@@ -207,21 +226,48 @@ footer {
     margin-top: 20px;
 }
 
-.utensilios {
-    width: 120px;
-    float: left; /* Desloca o elemento, deixando os outros elementos ao redor */
-    margin:  0 20px 0 20px;
+
+/* Estilizando com Pseudo-Elementos */
+
+/* "hover" -> Comportamento do elemento quando o mouse estiver no mesmo */
+nav a:hover {
+    color: darkcyan;
+    /* O elemento fica sublinhado  */
+    text-decoration: underline; 
 }
 
-.imagemBeneficios {
-    width: 60%;
+.produtos li:hover {
+    border-color: rgb(226, 186, 43);
 }
 
-.mapa {
-    padding: 3em 0;
+.produtos li:hover h2 {
+    font-size: 35px;    
 }
 
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
+/* Configuração quando o mouse interagir (clique) com o elemento */
+.produtos li:active {
+    border-color: #088c19;
 }
+
+.enviar:hover { /* Estilo quando o mouse está por cima do botão */
+    background-color: darkorange; 
+    /* Propriedade "scale()" -> Realiza o aumento de X% do CSS de todos os elementos de estilos correspondente a essa classe*/
+    transform: scale(1.2);
+    /* transform: rotate(70deg) scale(1.2); Propriedade "rotate(graus)" roda em Xgraus o elemento.*/
+    /* As propriedades na mesma linha, faz com que o efeito ocorra ao mesmo tempo.*/
+}
+
+.itens:first-child { /* Estiliza o primeiro item da lista,  */
+    font-weight: bold;
+}
+
+/* .itens:last-child -> Estiliza o ultimo item da lista  */
+/* Estiliza o nth-child(Nº do elemento na lista)*/ 
+/* .itens:nth-child(4){  
+    font-weight: bold;
+} */
+
+/* Estiliza o nth-child(Nº + n) -> Nesse caso estiliza todos os elementos pares da lista */ 
+/* .itens:nth-child(2n){   
+    font-weight: bold;
+} */
