@@ -20,6 +20,11 @@ header {
     font-size: 2em; /* em -> Utilizado para trabalhar com tamanho proporcional, nesse caso o tamanho da fonte desse elemento vai ser 2x maior que o tamanho base */
     margin: 0 0 1em;
     clear: left;
+    /* Adiciona sombra em texto */
+    /* text-shadow: 2px 2px #FF0000; */
+    /* color: rgb(0,0,0); Somente cor */
+    /* rgb -> Aplicado com opacidade no ultimo parametro */
+    /* color: rgba(0,0,0,0.3) */
 }
 
 .principal {
@@ -179,7 +184,7 @@ td, th {
 .utensilios {
     width: 120px;
     float: left; /* Desloca o elemento, deixando os outros elementos ao redor */
-    margin:  0 20px 0 20px;
+    margin:  0 20px 20px 0; 
 }
 
 .mapa {
@@ -203,6 +208,9 @@ td, th {
 .beneficios {
     padding: 3em 0;
     background: #888888;
+    /* Adiciona uma sombra interna */
+    /* box-shadow: inset 0 0 30px #FF0000; */
+
 }
 
 .conteudo-beneficios {
@@ -223,6 +231,10 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    /*  Aplica uma sombra*/
+    box-shadow: 10px 10px 10px #000000;
 }
 
 footer {
@@ -270,15 +282,19 @@ nav a:hover {
     /* As propriedades na mesma linha, faz com que o efeito ocorra ao mesmo tempo.*/
 }
 
-/* Estiliza o primeiro item da lista,  */
-/* .itens:first-child { 
-    font-weight: bold;
-} */
+.imagem-beneficios:hover {
+    opacity: 0.8;
+}
 
 /* Adiciona um elemento antes (before) do elemento HTML */
 .itens:before {
     content: "★";
 }
+
+/* Estiliza o primeiro item da lista,  */
+/* .itens:first-child { 
+    font-weight: bold;
+} */
 
 /* Aplica estilo a primeira letra do titulo */
 /* .titulo-principal:first-letter {
@@ -311,4 +327,26 @@ nav a:hover {
 /* Estiliza o nth-child(Nº + n) -> Nesse caso estiliza todos os elementos pares da lista */ 
 /* .itens:nth-child(2n){   
     font-weight: bold;
+} */
+
+/* Teste com seletores avançados */
+
+/* Estiliza o paragrafo que é filho direto da tag "main" */
+/* main > p {
+    background-color: red;
+} */
+
+/* Estiliza apenas o "p" que vem após a "img" */
+/* img + p {
+    background-color: blue;
+} */
+
+/* Estiliza todas as tags "p" que são irmãos da "img" e aparecem depois dela */
+/* img ~ p {
+    background: yellow;
+} */
+
+/* Estiliza todos os paragrafos dentro da classe "principal" que não recebem possuem o id "missao" */
+/* .principal p:not(#missao) {
+    background: orange;
 } */
