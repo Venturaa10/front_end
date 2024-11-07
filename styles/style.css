@@ -291,62 +291,20 @@ nav a:hover {
     content: "★";
 }
 
-/* Estiliza o primeiro item da lista,  */
-/* .itens:first-child { 
-    font-weight: bold;
-} */
+/* Aplica um layout responsivo. */
+/* Declarando os estilos para telas com o width de até X (valor) */
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 { 
+        text-align: center;
+    }
 
-/* Aplica estilo a primeira letra do titulo */
-/* .titulo-principal:first-letter {
-    font-weight: bold;
-} */
-
-/* 
-.titulo-principal:before {
-    content: "[ ";
-
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }
-
-/* Adiciona um elemento após (after) o elemento HTML */
-/* .titulo-principal:after {
-    content: " ]";
-}  */
-
-
-/* Aplica estilo na primeira linha do texto */
-/* p::first-line {
-    font-style: italic;
-} */
-
-/* .itens:last-child -> Estiliza o ultimo item da lista  */
-/* Estiliza o nth-child(Nº do elemento na lista)*/ 
-/* .itens:nth-child(4){  
-    font-weight: bold;
-} */
-
-/* Estiliza o nth-child(Nº + n) -> Nesse caso estiliza todos os elementos pares da lista */ 
-/* .itens:nth-child(2n){   
-    font-weight: bold;
-} */
-
-/* Teste com seletores avançados */
-
-/* Estiliza o paragrafo que é filho direto da tag "main" */
-/* main > p {
-    background-color: red;
-} */
-
-/* Estiliza apenas o "p" que vem após a "img" */
-/* img + p {
-    background-color: blue;
-} */
-
-/* Estiliza todas as tags "p" que são irmãos da "img" e aparecem depois dela */
-/* img ~ p {
-    background: yellow;
-} */
-
-/* Estiliza todos os paragrafos dentro da classe "principal" que não recebem possuem o id "missao" */
-/* .principal p:not(#missao) {
-    background: orange;
-} */
