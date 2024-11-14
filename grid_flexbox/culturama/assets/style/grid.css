@@ -1,0 +1,42 @@
+.banner{
+    display: grid;
+    gap: 1rem;
+}
+
+.banner img:nth-child(1) {
+    /* A primeira imagem (amarela) ocupa do traço 1 ao 3 em relação as colunas */
+    grid-column: 1/3;
+}
+
+.banner img:nth-child(4) {
+    /* A imagem 4 (vermelha), ocupa a segunda linha ate a quarta linha */
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.eventos__item {
+    display: grid;
+    grid-template-areas: 
+    /* A propriedade desenha (cria) e nomeia essas areas, e determina a quantidade de linhas e colunas que vão ocupar , exemplo a palavra 'iamgem', vai ocupar a primeira linha, e a primeira e segunda coluna */
+        "imagem imagem"
+        "nome nome"
+        "data data"
+        "local botao";
+}
+
+@media (min-width: 720px) {
+    .banner {
+        grid-template-columns: calc(50% - 0.75rem) auto auto;
+        column-gap: 1.5rem;
+    }
+
+    .banner img:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .banner img:nth-child(4) {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+}

@@ -1,3 +1,4 @@
+/* Cabeçalho */
 .menu {
     display: flex;
     justify-content: space-evenly;
@@ -7,15 +8,62 @@
     column-gap: 33px; /* Aplica uma lacuna vertical entre elementos*/
 }
 
+/* Categorias */
+.categorias__lista {
+    display: flex;
+    flex-direction: column; /* Os elementos ficam um encima do outro */
+    row-gap: .5rem; /* Espaçamento entre os elementos*/
+}
+
+/* Destaques */
+.destaques {
+    display: flex;
+    align-items: center; /* Alinha os elementos ao centro */
+    gap: 10px; /* Espaçamento é aplicado tanto em linhas, quanto em colunas*/ 
+}
+
+.destaques__barra {
+    flex-grow: 1; /* Torna a barra de destaque responsiva, crescendo de acordo com o tamanho da tela */
+    /* Obs: valores de gap, border e, padding podem influenciar no comportamento do flex-grow. */
+}
+
+/* Eventos */
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px; /* Torna o crescimento mais correto, proporcional ao tamanho da tela, funcionando juntamente nesse caso com o atributo "flex-grow" */
+}
+
+
 @media (min-width: 720px) {
+    /* Estilos para telas de tablets */
+    /* Cabeçalho */
     .menu {
         column-gap: 75px;
+    }
+
+    /* Categorias */
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem; /* Espaçamento entre as colunas */
+        row-gap: 1rem;
+    }
+
+    .eventos__lista {
+        justify-content: end; /* Alinha ao lado direito da linha, que corresponde ao fim da linha */
     }
 }
 
 
 @media (min-width: 1440px) {
-
+    /* Cabeçalho */
     .menu {
         column-gap: 105px;
         flex-wrap: nowrap; /* Evita a quebra de linha do elemento */
@@ -43,3 +91,5 @@
     }
 
 }
+
+
