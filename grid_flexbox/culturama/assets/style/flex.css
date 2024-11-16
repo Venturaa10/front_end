@@ -41,6 +41,31 @@
     max-width: 400px; /* Torna o crescimento mais correto, proporcional ao tamanho da tela, funcionando juntamente nesse caso com o atributo "flex-grow" */
 }
 
+.agenda_lista {
+    display: flex; /* Organiza os elementos em uma linha */
+    flex-wrap: wrap; /* Faz os elementos passarem para uma proxima linha se necessario */
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.agenda_item {
+    flex-grow: 1;
+}
+
+/* Rodape */
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adiciona espaçamentos entre os elementos */
+}
+
+.rodape__logo {
+    align-self: end; /* Alinha a logo ao final da linha */
+    /* align-self: flex-start; */ /* Aplica alinhamento ao topo */
+}
+
+
 
 @media (min-width: 720px) {
     /* Estilos para telas de tablets */
